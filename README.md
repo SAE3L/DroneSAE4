@@ -37,7 +37,8 @@
   4. Initialiser la zone de vole
   5. 
 # **4 : Communiquer avec un drone**
-
+  On a réinstaller les differentes librairies proposé par crazy fly. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter au drones.
+  Apres quelques essais ont arrive a récuperer l'orientation des drones, leur rotation sur les 3 axes. On a donc une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces inforlations en temps réelle.
 
 
 # **5 : Communiquer avec les balises de localisation**
