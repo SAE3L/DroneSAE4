@@ -39,7 +39,11 @@
 # **4 : Communiquer avec un drone**
   On a réinstaller les differentes librairies proposé par crazy fly. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter au drones.
   Apres quelques essais ont arrive a récuperer l'orientation des drones, leur rotation sur les 3 axes. On a donc une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces inforlations en temps réelle.
+  Le script python ne peut pas s'executer en même temps que l'application client.
 
 
 # **5 : Communiquer avec les balises de localisation**
+  les balises de comunications ont nécessiter d'installer plusieurs librairies, directement dans la console de Linux ce qui peut vite être compliqué pour des utilisateurs window.
 
+
+# **6 : Initialiser la zone de vole**
