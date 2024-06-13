@@ -35,6 +35,7 @@
   3. Communiquer avec les balises
   4. Initialiser la zone de vol
   5. Repérer ls drones dans l'espace
+![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Organisation/Gantt.PNG)
 # **4 : Communiquer avec un drone**
   On a réinstaller les differentes librairies proposé par crazy fly. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter au drones.
   Apres quelques essais ont arrive a récuperer l'orientation des drones, leurs rotations sur les 3 axes. On a donc une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces inforlations en temps réelle.
