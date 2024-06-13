@@ -39,6 +39,7 @@
   Apres quelques essais ont arrive a récuperer l'orientation des drones, leurs rotations sur les 3 axes. On a donc une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces inforlations en temps réelle.
   Le script python ne peut pas s'executer en même temps que l'application client.
 
+![alt tag](https://github.com/arduilex/SAE4_drone/blob/main/images/overview_clientsoftware.jpg?raw=true)
 
 # **5 : Communiquer avec les balises de localisation**
   Nous avons du installer plusieurs librairies et mettre à jour la version de python. Pour cela nous avons executer différentes commandes dans le terminal. Certaine ibrairies étaient déja présente.
