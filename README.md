@@ -47,6 +47,6 @@
   L'une des balise était défectueuse car le port micro-USB était cassé. Le temps de la réparer nous avons opté pour un système à 6 balises comme ci-dessous.
   
   ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png)
-  
-# **6 : Initialiser la zone de vol**
+
+  Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
