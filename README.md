@@ -17,7 +17,7 @@
 4. Communiquer avec un drone
 5. Communiquer avec les balises de localisation
 
-
+![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/MarkdownGithub.png)
 
 # **1 : Récuperation du projet existant**
   La récupération du projet existant passe déja pas la récupération du GitHub du projet de l'année dernière. La lecture de leur traces écrites sur ce qu'ils avaient accompli. Ensuite un inventaire du materiel. On compte donc :
