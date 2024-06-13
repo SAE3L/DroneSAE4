@@ -43,6 +43,8 @@
 # **5 : Communiquer avec les balises de localisation**
   Nous avons du installer plusieurs librairies et mettre à jour la version de python. Pour cela nous avons executer différentes commandes dans le terminal. Certaine ibrairies étaient déja présente.
   Nous avons placé les balises en respectant la documentation technique. Les antennes doivent se situer à 15cm de la surface sur laquelle elles sont posés (possible grace a l'utilisation des support 3D). Elles doivent etre espacés l'une de l'autre de au moins 2 mètres.
+  Nous avons positioné les balises  
+  Ci dessous un exemple du positionnement des balises.
   
   ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png)
   
