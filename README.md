@@ -35,7 +35,7 @@
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Organisation/Gantt.PNG)
 
 # **4 : Communiquer avec un drone**
-  On a réinstaller les differentes librairies proposé par crazyflie. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter au drones.
+  On a réinstaller les differentes librairies proposé par crazyflie. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter aux drones.
   Apres quelques essais ont arrive a récuperer l'orientation des drones, leurs rotations sur les 3 axes. On a donc une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces inforlations en temps réelle.
   Le script python ne peut pas s'executer en même temps que l'application client.
 
