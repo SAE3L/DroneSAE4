@@ -50,3 +50,12 @@
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
 
 Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%20drone) configure et contrôle un drone Crazyflie à l'aide d'un système de positionnement Loco Positioning System (LPS) composé de six ancres, créant un espace de référence pour le positionnement précis du drone. Après avoir importé les bibliothèques nécessaires, le script initialise les positions des ancres et les configure via la fonction write_positions_to_anchors. Il établit ensuite une connexion avec le drone en utilisant SyncCrazyflie et MotionCommander. Le programme initialise également un logger de position (PoseLogger) pour enregistrer les positions du drone en temps réel. Ensuite, il définit une cible de position et, à chaque itération d'une boucle de 100 cycles, il imprime la position actuelle du drone et envoie un point de consigne de position pour maintenir une hauteur de 2 mètres. Enfin, après ces itérations, le drone est commandé à atterrir. Le programme assure une communication efficace avec le drone et un contrôle précis de sa position grâce aux ancres LPS, permettant ainsi de tester et de démontrer les capacités de navigation autonome du drone dans un espace défini.
+
+# **6 : Proteger physiquement les drones**
+  Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones.
+
+  ///////////////////////inserez images
+
+
+# **7 : Situation actuelle **
+  Contrairement a ce que l'on avais pu croire, le groupe précédant n'avais pas éfféctuer de vol grace a la localisation par balise. Grace a un code proposé par le constructeur, on a réussi a combiner la partie commande du drones et localisation du drone. Ce qui a permit de faire un programme qui permet d'entrée une coordonnées a laquelle le drone doit se rendre. On lui avait demandé d'aller a 0; 0; 20. Soit 20cm au dessus de l'origine. Le script s'est montré concluant car le drone décolle, se place a 20cm en hauteur.
