@@ -54,7 +54,7 @@ Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%
 # **6 : Proteger physiquement les drones**
   Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones.
 
-  ///////////////////////inserez images
+ rrrrrrrrrrrrrrrrr Image
 
 
 # **7 : Situation actuelle **
