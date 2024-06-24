@@ -61,9 +61,18 @@ Il faut ensuite aller dans la section "configure node" rentrer le numéro de la 
 ![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png)
 
 # **6 : Proteger physiquement les drones**
-  Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones.
+  Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones. Nous avons imprimer les supports à l'IUT lab.
 
- rrrrrrrrrrrrrrrrr Image
+Le premier support était facile à monter mais moins pratique (les hélices peuvent toucher la structure)
+
+![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone2.jpg)
+[lien du support](https://www.myminifactory.com/object/3d-print-crazyflie-bumper-cage-with-battery-holder-54937)
+
+Le deuxième est plus long à monter mais est beaucoup plus fiable. Il est aussi plus rapide à imprimer. 
+
+![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone1.jpg)
+[lien du support](https://www.printables.com/en/model/76336-crazyflie-21-cage-prop-guard)
+
 
 
 # **7 : Situation actuelle**
