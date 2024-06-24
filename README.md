@@ -46,15 +46,18 @@
   
   ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png)
 
-  Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. 
+  Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. Ici nous utilisons le mode TDoA2 qui permet d'utiliser 6 balises ou 8 balises (il est préférable d'utiliser ce mode car les balises sont déjà configuré dans celui-ci). 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
 
 Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%20drone) configure et contrôle un drone Crazyflie à l'aide d'un système de positionnement Loco Positioning System (LPS) composé de six ancres, créant un espace de référence pour le positionnement précis du drone. Après avoir importé les bibliothèques nécessaires, le script initialise les positions des ancres et les configure via la fonction write_positions_to_anchors. Il établit ensuite une connexion avec le drone en utilisant SyncCrazyflie et MotionCommander. Le programme initialise également un logger de position (PoseLogger) pour enregistrer les positions du drone en temps réel. Ensuite, il définit une cible de position et, à chaque itération d'une boucle de 100 cycles, il imprime la position actuelle du drone et envoie un point de consigne de position pour maintenir une hauteur de 2 mètres. Enfin, après ces itérations, le drone est commandé à atterrir. Le programme assure une communication efficace avec le drone et un contrôle précis de sa position grâce aux ancres LPS, permettant ainsi de tester et de démontrer les capacités de navigation autonome du drone dans un espace défini.
 
 **Problèmes de connection**
 Lors de la connection depuis le client, les balises ne sont parfois pas détectés, elles sont encadrés en rouge. La solutions que nous avons trouvé à cela est de flasché les balises une à une. Il faut pour cela utiliser l'application lps configuration tool. On peut l'ouvrir dans le terminal en utilisant la commande : 
-```python3 -m lpstools```
 
+```python3 -m lpstools```
+Il faut ensuite aller dans la section "configure node" rentrer le numéro de la balise (pour plus de simplicité utiliser celui collé dessus) et définir en quel mode il sera utilisé.
+
+![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png)
 
 # **6 : Proteger physiquement les drones**
   Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones.
