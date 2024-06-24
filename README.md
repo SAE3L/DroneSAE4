@@ -51,6 +51,11 @@
 
 Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%20drone) configure et contrôle un drone Crazyflie à l'aide d'un système de positionnement Loco Positioning System (LPS) composé de six ancres, créant un espace de référence pour le positionnement précis du drone. Après avoir importé les bibliothèques nécessaires, le script initialise les positions des ancres et les configure via la fonction write_positions_to_anchors. Il établit ensuite une connexion avec le drone en utilisant SyncCrazyflie et MotionCommander. Le programme initialise également un logger de position (PoseLogger) pour enregistrer les positions du drone en temps réel. Ensuite, il définit une cible de position et, à chaque itération d'une boucle de 100 cycles, il imprime la position actuelle du drone et envoie un point de consigne de position pour maintenir une hauteur de 2 mètres. Enfin, après ces itérations, le drone est commandé à atterrir. Le programme assure une communication efficace avec le drone et un contrôle précis de sa position grâce aux ancres LPS, permettant ainsi de tester et de démontrer les capacités de navigation autonome du drone dans un espace défini.
 
+**Problèmes de connection**
+Lors de la connection depuis le client, les balises ne sont parfois pas détectés, elles sont encadrés en rouge. La solutions que nous avons trouvé à cela est de flasché les balises une à une. Il faut pour cela utiliser l'application lps configuration tool. On peut l'ouvrir dans le terminal en utilisant la commande : 
+```python3 -m lpstools```
+
+
 # **6 : Proteger physiquement les drones**
   Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones.
 
