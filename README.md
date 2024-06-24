@@ -56,7 +56,7 @@ Lors de la connection depuis le client, les balises ne sont parfois pas détect�
 
 ```python3 -m lpstools```
 
-Il faut ensuite aller dans la section "configure node" rentrer le numéro de la balise (pour plus de simplicité utiliser celui collé dessus) et définir en quel mode il sera utilisé.
+Il faut ensuite aller dans la section "configure node" rentrer le numéro de la balise (pour plus de simplicité utiliser celui collé sur la balise) et définir en quel mode il sera utilisé.
 
 ![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png)
 
