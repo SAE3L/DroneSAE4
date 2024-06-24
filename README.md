@@ -55,6 +55,7 @@ Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%
 Lors de la connection depuis le client, les balises ne sont parfois pas détectés, elles sont encadrés en rouge. La solutions que nous avons trouvé à cela est de flasché les balises une à une. Il faut pour cela utiliser l'application lps configuration tool. On peut l'ouvrir dans le terminal en utilisant la commande : 
 
 ```python3 -m lpstools```
+
 Il faut ensuite aller dans la section "configure node" rentrer le numéro de la balise (pour plus de simplicité utiliser celui collé dessus) et définir en quel mode il sera utilisé.
 
 ![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png)
