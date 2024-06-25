@@ -58,6 +58,7 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
 
 ### **2.2 : Étude de fonctionnement des balises**
   On a du comprendre comment fonctionnais les balises (aussi appellées nodes). Pour ce faire nous avons étudié les différents modes TWR, TDOAT2 et TDOAT3. Dans tout les cas il s'agit de comprendre la distance entre la balise et le drone en calculant le temps que prend une information radio à être envoyée de l'antenne au drone et la reception de cette information.
+  
 Vous pouvez voir plus d'informations sur ce liens : [lien du wiki sur les balises](https://wiki.bitcraze.io/projects:lps:node)
 
 **TWR :** c'est un mode de connection à 6 antennes, deux triangles inversés dans l'espace. Idéal pour le commencement pour la configuration du client et des balises.
@@ -83,7 +84,12 @@ le wiki : https://wiki.bitcraze.io/
 
   <img src='https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png' width = 600>
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/Principe_Com_Drone_Ancre.png' width = 600>
+  
+  Ci-dessous un shéma d'une balise
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/schema_node.png' width = 600>
 
+  Lors de l'essai de connexion à 8 balises nous nous sommes rendusn compte que la balise 5 (dont il manquait le port micro-USB) était configuré en TWR tandis que nous avions connectés les autres en TDoA2. Il n'était donc pas possible d'utiliser les sytème à 8 balises.  La seule manière d'envoyer les informatons à la balise 5 que nous alimentions avec un simple bornier serait de brancher le port annoté 9 sur le schéma.
+  
   Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. Ici nous utilisons le mode TDoA2 qui permet d'utiliser 6 balises ou 8 balises (il est préférable d'utiliser ce mode car les balises sont déjà configuré dans celui-ci). 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
 
