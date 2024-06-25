@@ -1,6 +1,7 @@
 # Bienvenue sur le Projet SAÉ-4: Essaim de Drones dans l'Espace
 
-
+<img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/iut_mulhouse.png' width = 600>
+<img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/GEII.jpg' width = 300>
 
 ## Equipe : WEIGEL Léon - POULIN Loup - JAFFEUX Louis
 ## Enseignant Référents : M. HUEBER Eric - MOURLION Benjamin
