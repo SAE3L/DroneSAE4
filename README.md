@@ -32,6 +32,13 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
   ![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/matos.jpg)
   (matériel avec ajouts personnel : protections drones et supports balises)
 
+### **2.1 : Étude de fonctionnement des drones**
+  blablabla
+
+### **2.2 : Étude de fonctionnement des balises**
+  On a du comprendre comment fonctionnais les balises (aussi appellées nodes). Pour ce faire nous avons étudié les différents modes TWR, TDOAT2 et TDOAT3. Dans tout les cas il s'agit de comprendre la distance entre la balise et le drone en calculant le temps que prend une information radio à être envoyée de l'antenne au drone et la reception de cette information.
+Vous pouvez voir plus d'informations sur ce liens : [lien du wiki sur les balises](https://wiki.bitcraze.io/projects:lps:node)
+
 # **3 : Définition d'un cahier des charges précis et d'un diagramme de GANTT**
   On a du essayer de hierarchisé les differentes tâches a effectuer. N'ayant pas de consigne précise on a pour objectif d'accomplir ces tâches les une après les autres le plus loin possible.
   
