@@ -23,7 +23,8 @@
   8 balises de localisation, dont une défectueuse. 
   8 drones pilotables, dont un abimé.
   Des batteries portables pour alimenter les balises.
-  Un PC sous linux pour l'utilisation du client
+  Un PC sous linux pour l'utilisation du client.
+Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le sort vous être favorable".
 
 # **2 : Compréhension du projet existant**
   Le projet déja existant consiste en un dossier de plusieurs script python, ces scripts ne sont pas annoter, on peut se fier uniquement au nom du script pour deviner leur utilité.
