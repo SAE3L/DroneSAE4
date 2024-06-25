@@ -39,13 +39,18 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/DirectionDroneOrientation.png' width = 600>
   
   2X Led rouge = Erreur capteur d’inclinaison
+  
   2X Led rouge rapide = Erreur Extension
+  
   Bleu clignotant = Erreur batterie / batterie vide
+  
   Led 4 verte = opérationnel
+  
   Led 4 jaune = téléversemment
+  
   Led 1 verte = en attente
 
-  De plus, n'ayant jamais piloter de drones, on à pu grace au site bitcraze, sur la categorie introductions et mise en marche pas à pas, découvrir ce qu'est que le : **Yaw, Roll, Pitc & Thrust**, respectivement : Lacet, Roulis Tanguage et Poussée.
+  De plus, n'ayant jamais piloter de drones, on à pu grace au site bitcraze, sur la categorie introductions et mise en marche pas à pas, découvrir ce qu'est que le : **Yaw, Roll, Pitch & Thrust**, respectivement : Lacet, Roulis Tanguage et Poussée.
   On peut bien le voir sur l'image suivante : 
 
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/Axes.png' width = 600>
