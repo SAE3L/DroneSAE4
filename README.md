@@ -38,6 +38,8 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
 # **4 : Communiquer avec un drone**
   On a réinstaller les differentes librairies proposé par crazyflie. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter aux drones. Apres quelques essais on arrive a récuperer l'orientation des drones et leurs rotations sur les 3 axes. On a une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces informations en temps réel. Le script python ne peut pas s'executer en même temps que l'application client. La comunication est limitée il faut donc mettre l'antenne proche de la zone d'action des drones. Le code peut appeller differentes bibliothèques pour les faire décoller ou atterir, si on stop le script les moteurs du drone s'arrettent imédiatement. Les drones ont tendancent a se mettre en défaut, reconnaissable grâce a une led rouge qui clignote sur l'une des branche du drone. A ce moment la, le drone est encore allumé, mais ne communique plus avec le PC.
 
+le wiki : https://wiki.bitcraze.io/
+
 ![alt tag](https://github.com/arduilex/SAE4_drone/blob/main/images/overview_clientsoftware.jpg?raw=true)
 
 # **5 : Communiquer avec les balises de localisation**
