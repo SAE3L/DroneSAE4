@@ -29,7 +29,6 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
 # **2 : Compréhension du projet existant**
   Le projet déja existant consiste en un dossier de plusieurs script python, ces scripts ne sont pas annoter, on peut se fier uniquement au nom du script pour deviner leur utilité.
   Aussi le READ ME n'explique pas la procédure de mise en fonctionnement du projet, il faudra donc reprendre le projet de 0. On sait que l'ancien groupe a réussi a localiser les drones dans l'espace ce qui est la finalité du projet.
-  <img src='https://drive.google.com/file/d/1QVgdUaZgqO17IJ1fTs9GyrAMtkylSK-w/view?usp=drive_link' width = 600>
 
 # **3 : Définition d'un cahier des charges précis et d'un diagramme de GANTT**
   On a du essayer de hierarchisé les differentes tâches a effectuer. N'ayant pas de consigne précise on a pour objectif d'accomplir ces tâches les une après les autres le plus loin possible.
