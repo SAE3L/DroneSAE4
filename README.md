@@ -89,9 +89,10 @@ le wiki : https://wiki.bitcraze.io/
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/schema_node.png' width = 600>
 
   Lors de l'essai de connexion à 8 balises nous nous sommes rendusn compte que la balise 5 (dont il manquait le port micro-USB) était configuré en TWR tandis que nous avions connectés les autres en TDoA2. Il n'était donc pas possible d'utiliser les sytème à 8 balises.  La seule manière d'envoyer les informatons à la balise 5 que nous alimentions avec un simple bornier serait de brancher le port annoté 9 sur le schéma.
+  Ci dessous on remarque les différentes connexions.
   
-  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/connexion1.png' width = 600>
-  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/connexion2.png' width = 600>
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/connexion1.png' width = 400>
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/connexion2.png' width = 400>
   
   Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. Ici nous utilisons le mode TDoA2 qui permet d'utiliser 6 balises ou 8 balises (il est préférable d'utiliser ce mode car les balises sont déjà configuré dans celui-ci). 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
