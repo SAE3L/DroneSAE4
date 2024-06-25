@@ -30,12 +30,25 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
 # **2 : Compréhension du projet existant**
   Le projet déja existant consiste en un dossier de plusieurs script python, ces scripts ne sont pas annoter, on peut se fier uniquement au nom du script pour deviner leur utilité.
   Aussi le READ ME n'explique pas la procédure de mise en fonctionnement du projet, il faudra donc reprendre le projet de 0. On sait que l'ancien groupe a réussi a localiser les drones dans l'espace ce qui est la finalité du projet.
-
-  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/matos.jpg' width = 500>
+  ![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/matos.jpg)
   (matériel avec ajouts personnel : protections drones et supports balises)
 
 ### **2.1 : Étude de fonctionnement des drones**
-  blablabla
+  On a pu découvrir la signalitique des drones, en effets, les drones donnent des informations à l'utilisateurs via ces différentes LEDs : 
+
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/DirectionDroneOrientation.png' width = 600>
+  
+  2X Led rouge = Erreur capteur d’inclinaison
+  2X Led rouge rapide = Erreur Extension
+  Bleu clignotant = Erreur batterie / batterie vide
+  Led 4 verte = opérationnel
+  Led 4 jaune = téléversemment
+  Led 1 verte = en attente
+
+  De plus, n'ayant jamais piloter de drones, on à pu grace au site bitcraze, sur la categorie introductions et mise en marche pas à pas, découvrir ce qu'est que le : **Yaw, Roll, Pitc & Thrust**, respectivement : Lacet, Roulis Tanguage et Poussée.
+  On peut bien le voir sur l'image suivante : 
+
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/Axes.png' width = 600>
 
 ### **2.2 : Étude de fonctionnement des balises**
   On a du comprendre comment fonctionnais les balises (aussi appellées nodes). Pour ce faire nous avons étudié les différents modes TWR, TDOAT2 et TDOAT3. Dans tout les cas il s'agit de comprendre la distance entre la balise et le drone en calculant le temps que prend une information radio à être envoyée de l'antenne au drone et la reception de cette information.
@@ -70,7 +83,7 @@ le wiki : https://wiki.bitcraze.io/
 
 Le [script Python](https://github.com/SAE3L/DroneSAE4/blob/main/code%20position%20drone) configure et contrôle un drone Crazyflie à l'aide d'un système de positionnement Loco Positioning System (LPS) composé de six ancres, créant un espace de référence pour le positionnement précis du drone. Après avoir importé les bibliothèques nécessaires, le script initialise les positions des ancres et les configure via la fonction write_positions_to_anchors. Il établit ensuite une connexion avec le drone en utilisant SyncCrazyflie et MotionCommander. Le programme initialise également un logger de position (PoseLogger) pour enregistrer les positions du drone en temps réel. Ensuite, il définit une cible de position et, à chaque itération d'une boucle de 100 cycles, il imprime la position actuelle du drone et envoie un point de consigne de position pour maintenir une hauteur de 2 mètres. Enfin, après ces itérations, le drone est commandé à atterrir. Le programme assure une communication efficace avec le drone et un contrôle précis de sa position grâce aux ancres LPS, permettant ainsi de tester et de démontrer les capacités de navigation autonome du drone dans un espace défini.
 
-### **Problèmes de connection**
+**Problèmes de connection**
 Lors de la connection depuis le client, les balises ne sont parfois pas détectés, elles sont encadrés en rouge. La solutions que nous avons trouvé à cela est de flasché les balises une à une. Il faut pour cela utiliser l'application lps configuration tool. On peut l'ouvrir dans le terminal en utilisant la commande : 
 
 ```python3 -m lpstools```
@@ -79,7 +92,6 @@ Il faut ensuite aller dans la section "configure node" rentrer le numéro de la 
 
 <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png' width = 600>
 
-### **Configuration à 8 balises**
 # **6 : Proteger physiquement les drones**
   Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones. Nous avons imprimer les supports à l'IUT lab.
 
