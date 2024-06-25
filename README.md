@@ -89,7 +89,7 @@ le wiki : https://wiki.bitcraze.io/
   
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/schema_node.png' width = 600>
 
-  Lors de l'essai de connexion à 8 balises nous nous sommes rendusn compte que la balise 5 (dont il manquait le port micro-USB) était configuré en TWR tandis que nous avions connectés les autres en TDoA2. Il n'était donc pas possible d'utiliser les sytème à 8 balises.  La seule manière d'envoyer les informatons à la balise 5 que nous alimentions avec un simple bornier serait de brancher le port annoté 9 sur le schéma.
+  Lors de l'essai de connexion à 8 balises nous nous sommes rendusn compte que la balise 5 (dont il manquait le port micro-USB) était configuré en TWR tandis que nous avions connectés les autres en TDoA2. Il n'était donc pas possible d'utiliser les sytème à 8 balises.  La seule manière d'envoyer les informatons à la balise 5 que nous alimentions avec un simple bornier serait de brancher le port annoté 8 sur le schéma.
   Ci dessous on remarque les différentes connexions.
   
   <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/connexion1.png' width = 400>
