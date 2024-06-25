@@ -62,6 +62,7 @@ le wiki : https://wiki.bitcraze.io/
   L'une des balise était défectueuse car le port micro-USB était cassé. Le temps de la réparer nous avons opté pour un système à 6 balises comme ci-dessous. Pour tester la bonne conection des balises on peut utiliser l'application client. La connexion nécessite qu'il y est un drone fonctionnel allumé, et que l'entierté des balises(6 ou 8) soit allumé et fonctionnele, sinon aucune balise n'apparait sur l'application client.
 
   <img src='https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png' width = 600>
+  <img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/Principe_Com_Drone_Ancre.png' width = 600>
 
   Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. Ici nous utilisons le mode TDoA2 qui permet d'utiliser 6 balises ou 8 balises (il est préférable d'utiliser ce mode car les balises sont déjà configuré dans celui-ci). 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
