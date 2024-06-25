@@ -35,16 +35,16 @@
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Organisation/Gantt.PNG)
 
 # **4 : Communiquer avec un drone**
-  On a réinstaller les differentes librairies proposé par crazyflie. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter aux drones. Apres quelques essais on arrive a récuperer l'orientation des drones et leurs rotations sur les 3 axes. On a une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces informations en temps réel. Le script python ne peut pas s'executer en même temps que l'application client. La comunication est limitée il faut donc mettre l'antenne proche de la zone d'action des drones. Le code peut appeller differentes bibliothèques pour les faire décoller ou atterir, si on stop le script les moteurs du drone s'arrettent imédiatement.
+  On a réinstaller les differentes librairies proposé par crazyflie. Grace a elle on a réussi a executer du code python, qui grace au librairie peut se connecter aux drones. Apres quelques essais on arrive a récuperer l'orientation des drones et leurs rotations sur les 3 axes. On a une partie code qui se connecte avec l'antenne au drone, et une partie qui récupère ces informations en temps réel. Le script python ne peut pas s'executer en même temps que l'application client. La comunication est limitée il faut donc mettre l'antenne proche de la zone d'action des drones. Le code peut appeller differentes bibliothèques pour les faire décoller ou atterir, si on stop le script les moteurs du drone s'arrettent imédiatement. Les drones ont tendancent a se mettre en défaut, reconnaissable grâce a une led rouge qui clignote sur l'une des branche du drone. A ce moment la, le drone est encore allumé, mais ne communique plus avec le PC.
 
 ![alt tag](https://github.com/arduilex/SAE4_drone/blob/main/images/overview_clientsoftware.jpg?raw=true)
 
 # **5 : Communiquer avec les balises de localisation**
   Nous avons du installer plusieurs librairies et mettre à jour la version de python. Pour cela nous avons executer différentes commandes dans le terminal. Certaine ibrairies étaient déja présente.
   Nous avons placé les balises en respectant la documentation technique. Les antennes doivent se situer à 15cm de la surface sur laquelle elles sont posés (possible grace a l'utilisation des support 3D). Elles doivent etre espacés l'une de l'autre de au moins 2 mètres.
-  L'une des balise était défectueuse car le port micro-USB était cassé. Le temps de la réparer nous avons opté pour un système à 6 balises comme ci-dessous.
-  
-  ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png)
+  L'une des balise était défectueuse car le port micro-USB était cassé. Le temps de la réparer nous avons opté pour un système à 6 balises comme ci-dessous. Pour tester la bonne conection des balises on peut utiliser l'application client. La connexion nécessite qu'il y est un drone fonctionnel allumé, et que l'entierté des balises(6 ou 8) soit allumé et fonctionnele, sinon aucune balise n'apparait sur l'application client.
+
+  <img src='https://github.com/SAE3L/DroneSAE4/blob/main/Image/loco_ref_system_6_anchors.png' width = 600>
 
   Une fois les balises physiquement placés nous les avons déclarés dans le logiciel. Nous avons donc mesuré les distances de nos balises par rapport a notre centre et les avons écrites dans le logiciel afin qu'il place les balises dans l'espace. Grace à cela il peut situer le drone  dans une visualisation 3D. Ici nous utilisons le mode TDoA2 qui permet d'utiliser 6 balises ou 8 balises (il est préférable d'utiliser ce mode car les balises sont déjà configuré dans celui-ci). 
 ![alt tag](https://github.com/SAE3L/DroneSAE4/blob/main/Image/Capture%20d%E2%80%99%C3%A9cran%20du%202024-06-13%2009-17-30.png)
@@ -58,19 +58,21 @@ Lors de la connection depuis le client, les balises ne sont parfois pas détect�
 
 Il faut ensuite aller dans la section "configure node" rentrer le numéro de la balise (pour plus de simplicité utiliser celui collé sur la balise) et définir en quel mode il sera utilisé.
 
-![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png)
+<img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/lps_tool.png' width = 600>
 
 # **6 : Proteger physiquement les drones**
   Les différents essais de vols ont soulever un problème. La fragilité excessive des drones, et le besoin de trouver une solution. Pour cela nous avons fait des recherches sur des "armures de drones" c'est a dire des protection platisque qui pourrai proteger le drone et ses hélices des contacts. On a trouvé des models 3D sur internet pour proteger les drones, après plusieurs éssais, on a récupere un modèle qui fonctionne qu'il a fallu adapter aux drones. Nous avons imprimer les supports à l'IUT lab.
 
 Le premier support était facile à monter mais moins pratique (les hélices peuvent toucher la structure)
 
-![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone2.jpg)
+&nbsp;<img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone2.jpg' width = 300>
+
 [lien du support](https://www.myminifactory.com/object/3d-print-crazyflie-bumper-cage-with-battery-holder-54937)
 
 Le deuxième est plus long à monter mais est beaucoup plus fiable. Il est aussi plus rapide à imprimer. 
 
-![alt tag](https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone1.jpg)
+&nbsp;<img src='https://raw.githubusercontent.com/SAE3L/DroneSAE4/main/Image/protectiondrone1.jpg' width = 300>
+
 [lien du support](https://www.printables.com/en/model/76336-crazyflie-21-cage-prop-guard)
 
 
