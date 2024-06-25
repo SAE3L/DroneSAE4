@@ -39,6 +39,10 @@ Si vous lisez ces mots dans le cadre de votre SAE sur ces drones : "Puisse le so
   On a du comprendre comment fonctionnais les balises (aussi appellées nodes). Pour ce faire nous avons étudié les différents modes TWR, TDOAT2 et TDOAT3. Dans tout les cas il s'agit de comprendre la distance entre la balise et le drone en calculant le temps que prend une information radio à être envoyée de l'antenne au drone et la reception de cette information.
 Vous pouvez voir plus d'informations sur ce liens : [lien du wiki sur les balises](https://wiki.bitcraze.io/projects:lps:node)
 
+**TWR :** c'est un mode de connection à 6 antennes, deux triangles inversés dans l'espace. Idéal pour le commencement pour la configuration du client et des balises.
+
+**TDOAT2 & TDOAT3 :** Plus stable, peut être utilisés à 6 ou 8 balises, peut gagner en precision pour des correction de positions
+
 # **3 : Définition d'un cahier des charges précis et d'un diagramme de GANTT**
   On a du essayer de hierarchisé les differentes tâches a effectuer. N'ayant pas de consigne précise on a pour objectif d'accomplir ces tâches les une après les autres le plus loin possible.
   
